@@ -50,10 +50,10 @@ btnActive.forEach((button) => {
     const h2Tag = container.querySelector(".text-btn");
     const textToCopy = container.querySelector(".textToCopy");
 
-    if(document.getElementById("coin-count-btn").value === 0){
-     alert('your coin is 0')
+    if (document.getElementById("coin-count-btn").value === 0) {
+      alert("your coin is 0");
     }
- 
+
     alert(` Calling: ${h2Tag.textContent} ${textToCopy.textContent}... `);
 
     const Copy = h2Tag.textContent.trim();
@@ -81,7 +81,7 @@ btnActive.forEach((button) => {
     renderData();
   });
 });
-// coin btn main
+// coin btn main button
 document.addEventListener("DOMContentLoaded", function decrees() {
   const numberSpan = document.getElementById("coin-count-btn");
   const numberBtns = document.querySelectorAll(".btn-active");
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function decrees() {
       let currentValue = parseInt(numberSpan.textContent);
 
       if (currentValue >= 0) {
-        numberSpan.textContent = currentValue +1;
+        numberSpan.textContent = currentValue + 1;
       }
     });
   });
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function decrees() {
       let currentValue = parseInt(numberSpan.textContent);
 
       if (currentValue >= 0) {
-        numberSpan.textContent = currentValue +1;
+        numberSpan.textContent = currentValue + 1;
       }
     });
   });
@@ -164,8 +164,7 @@ document
   });
 
 // clear data
-document.getElementById('clear').addEventListener('click',function(){
+document.getElementById("clear").addEventListener("click", function () {
   document.getElementById("transaction-button").innerHTML = "";
   transactionData = [];
-  
-})
+});
