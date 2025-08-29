@@ -50,7 +50,10 @@ btnActive.forEach((button) => {
     const h2Tag = container.querySelector(".text-btn");
     const textToCopy = container.querySelector(".textToCopy");
 
-
+    if(document.getElementById("coin-count-btn").value === 0){
+     alert('your coin is 0')
+    }
+ 
     alert(` Calling: ${h2Tag.textContent} ${textToCopy.textContent}... `);
 
     const Copy = h2Tag.textContent.trim();
@@ -87,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function decrees() {
     button.addEventListener("click", function () {
       let currentValue = parseInt(numberSpan.textContent);
 
-      if (currentValue >= 0) {
+      if (currentValue > 0) {
         numberSpan.textContent = currentValue - 20;
       }
     });
