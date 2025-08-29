@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--* font awesome cnd -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--* daisyui cnd  -->
+    <!--* tailwindcss cnd  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f5fff6]">
+    <nav class="bg-white max-w-[1800px] mx-auto max-h-[100px]">
+      <div class="flex justify-between items-center mt-[25px]">
+        <div class="flex gap-3">
+          <img class="size-12" src="./assets/logo.png" alt="" />
+          <h1 class="text-green-800 text-2xl font-bold">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="flex gap-2 mr-5 rounded-[50%] bg-[#41ff6b1a]">
+            <span id="love-count-btn">0</span>
+            <img class="size-6" src="./assets/heart.png" alt="" />
+          </div>
+          <div class="flex items-center gap-2">
+            <span id="coin-count-btn">100</span>
+            <img class="size-6" src="./assets/coin.png" alt="" />
+          </div>
+
+          <div
+            class="px-6 py-3 bg-green-600 rounded-4xl text-white font-semibold ml-3"
+          >
+            <span id="copy-count">0</span>
+            Copy
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!--* hero section -->
+      <div
+        class="h-[239px] min-w-full bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white"
+      >
+        <img
+          class="size-[92px] mx-auto mt-[20px]"
+          src="./assets/logo-dark.png"
+          alt=""
+        />
+        <h1 class="text-center text-2xl my-[20px]">
+          Emergency Service Directory
+        </h1>
+        <p class="text-center">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+
+      <!--* main card section -->
+      <div
+        class="div-parent max-w-[1800px] max-h-[1140px] mx-8 bg-[#f5fff6] grid grid-cols-12 gap-2"
+      >
+        <div class="card-section grid grid-cols-3 gap-7 col-span-9 mt-[48px]">
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+
+              <h1 class="text-2xl font-bold text-btn">
+                National Emergency Number
+              </h1>
+              <p>National Emergency</p>
+              <div class="item">
+                <h2 class="textToCopy text-2xl font-bold mt-[15px]">999</h2>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">
+                Police Helpline Number
+              </h1>
+              <p>Police</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">102</h1>
+                <p>Fire</p>
+              </div>
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">Fire Service Number1</h1>
+              <p>Fire Service</p>
+              <section>
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </section>
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">Ambulance Service</h1>
+              <p>Ambulance</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">
+                Women & Child Helpline
+              </h1>
+              <p>Women & Child Helpline</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">
+                Anti-Corruption Helpline
+              </h1>
+              <p>Anti-Corruption</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">Electricity Helpline</h1>
+              <p>Electricity Outage</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">Brac Helpline</h1>
+              <p>Brac</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-left">
+            <div
+              class="flex flex-col w-[436px] h-[360px] border-gray-500 p-6 bg-white shadow-[1px_5px_8px_#888888] rounded-2xl"
+            >
+              <div class="flex justify-between items-baseline m-[20px]">
+                <img
+                  class="size-[60px] p-2 bg-red-400 rounded-xl"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <img class="size-6" src="./assets/heart_1077035.png" alt="" />
+              </div>
+              <h1 class="text-2xl font-bold text-btn">
+                Bangladesh Railway Helpline
+              </h1>
+              <p>Bangladesh Railway</p>
+              <div class="item">
+                <h1 class="textToCopy text-2xl font-bold mt-[15px]">999</h1>
+                <p>Fire</p>
+              </div>
+
+              <div class="flex justify-around mt-[30px] ml-[-10px]">
+                <button
+                  class="copyButton w-[182px] rounded-xl bg-white border-2 border-gray-400 font-semibold"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn btn-active btn-secondary w-[182px] border-2 border-gray-400 rounded-xl bg-[#00a63e] font-semibold"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--* main card section right -->
+        <div
+          id=""
+          class="card-section-right col-span-3 p-3 flex justify-between items-baseline bg-white shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19)] rounded-xl mt-[48px] ml-[30px]"
+        >
+          <div class="flex items-center">
+            <i class="fa-regular fa-clock mr-2"></i>
+            <p class="font-semibold">Call History</p>
+          </div>
+          <div>
+            <button
+              id="clear"
+              class="btn btn-success text-white bg-[#00a63e] text-opacity-10 rounded-3xl w-[95px]"
+            >
+              Clear
+            </button>
+
+            <div
+              class="form-btn border-2 border-gray-300 text-center p-3 rounded-xl mt-5"
+            >
+              <h2 id="transaction-button">History</h2>
+            </div>
+            <br />
+          </div>
+
+
+
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
